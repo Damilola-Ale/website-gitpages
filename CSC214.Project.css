@@ -34,7 +34,7 @@ header {
 main {
     background-color: rgba(201, 206, 189, 0.9);
     width: 52%;
-    min-width: 450px;
+    min-width: 490px;
     box-shadow: 5px 5px 10px var(--black);
     border-radius: 20px;
     font-family: 'Poppins', sans-serif;
