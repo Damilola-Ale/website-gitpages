@@ -1,0 +1,117 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary1: #64403e;
+    --secondary: #c9cebd;
+    --primary2: #6c6062;
+    --spare1: #838e83;
+    --white: #f0fff1;
+    --black: #11151c;
+}
+html {
+    color: var(--black);
+    font-size: 24px;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(100, 64, 62, 0.8), rgba(108, 96, 98, 0.6)),  url('https://cdn.pixabay.com/photo/2017/08/01/19/48/people-2567566_1280.jpg');
+}
+header {
+    text-align: center;
+    margin: 70px 0 50px;
+}
+main {
+    background-color: rgba(201, 206, 189, 0.9);
+    width: 52%;
+    min-width: 450px;
+    box-shadow: 5px 5px 10px var(--black);
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px auto;
+    padding: 20px 0;
+}
+form {
+    width: 100%;
+    padding: 0 20px;
+}
+.question {
+    margin-bottom: 25px;
+}
+.question p {
+    margin: 0 0 5px;
+}
+.options {
+    margin: 0 10px;
+}
+input[type="radio"] {
+    height: 0.8rem;
+    width: 0.8rem;
+    font-size: 0.8rem;
+}
+.level label {
+    margin: 0 25px 0 0;
+}
+.role label {
+    margin: 0 10px 0 0;
+}
+input, select {
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.8rem;
+}
+a.button {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--primary1);
+    text-align: center;
+    width: 120px;
+    padding: 10px 0;
+    margin: 30px 0 20px auto;
+    border-radius: 3px;
+    transition: background-color 1s, border 0.5s;
+}
+input[type="submit"] {
+    width: 120px;
+    height: 50px;
+    color: var(--white);
+    background-color: var(--primary1);
+    border-radius: 3px;
+    transition: background-color 1s, border 0.5s;
+    display: block;
+    margin: 30px 0 20px auto;
+}
+a.button:hover, input[type="submit"]:hover {
+    background-color: var(--spare1);
+}
+.fa-solid {
+    transform: translate(0, 0);
+    transition: transform 0.3s;
+}
+a.button:hover .fa-solid {
+    transform: translate(3px, 0);
+}
+.footer {
+    border-top: 2px solid var(--primary2);
+    width: 100%;
+}
+.footer p {
+    font-size: 0.7rem;
+    font-style: italic;
+    font-weight: 100;
+    padding: 30px 20px;
+}
