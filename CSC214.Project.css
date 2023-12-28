@@ -117,6 +117,6 @@ a.button:hover .fa-solid {
 }
 @media (max-width: 300px) {
     main {
-        width: 180px;
+        width: 200px;
     }
 }
